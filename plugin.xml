@@ -13,7 +13,7 @@
             </array>
         </config-file>
     </platform>
-    <platform>
+    <platform name="android">
         <config-file target="AndroidManifest.xml" parent="/manifest/">
             <compatible-screens>
                 <screen android:screenDensity="ldpi" android:screenSize="small" />
