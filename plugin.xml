@@ -14,7 +14,7 @@
         </config-file>
     </platform>
     <platform name="android">
-        <config-file target="AndroidManifest.xml" parent="/manifest/">
+        <config-file target="AndroidManifest.xml" parent="/manifest/compatible-screens" mode="merge">
             <compatible-screens>
                 <screen android:screenDensity="ldpi" android:screenSize="small" />
                 <screen android:screenDensity="mdpi" android:screenSize="small" />
