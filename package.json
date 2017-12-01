@@ -8,9 +8,13 @@
     "cordova-android",
     "cordova-ios"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ruano84/cordova-plugin-phonesonly.git"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": "ruano84 <ruano84@gamil.com>",
   "license": "ISC"
 }
