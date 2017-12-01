@@ -1,0 +1,16 @@
+{
+  "name": "cordova-plugin-phonesonly",
+  "version": "1.0.0",
+  "description": "Cordova plugin to restrict your application installation to phones",
+  "main": "index.js",
+  "keywords": [
+    "ecosystem:cordova",
+    "cordova-android",
+    "cordova-ios"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}

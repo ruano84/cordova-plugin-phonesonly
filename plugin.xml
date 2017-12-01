@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+        id="cordova-plugin-phonesonly" version="0.2.3">
+    <name>PhonesOnly</name>
+    <description>Cordova plugin to restrict your application installation to phones</description>
+    <license>Apache 2.0</license>
+    <keywords>cordova,device</keywords>
+    <hook type="after_prepare" src="scripts/afterPrepare.js" />
+    <platform name="ios">
+        <config-file target="*-Info.plist" parent="UIRequiredDeviceCapabilities">
+            <array>
+                <string>telephony</string>
+            </array>
+        </config-file>
+    </platform>
+    <platform>
+        <config-file target="AndroidManifest.xml" parent="/manifest/">
+            <compatible-screens>
+                <screen android:screenDensity="ldpi" android:screenSize="small" />
+                <screen android:screenDensity="mdpi" android:screenSize="small" />
+                <screen android:screenDensity="hdpi" android:screenSize="small" />
+                <screen android:screenDensity="xhdpi" android:screenSize="small" />
+                <screen android:screenDensity="xxhdpi" android:screenSize="small" />
+                <screen android:screenDensity="xxxhdpi" android:screenSize="small" />
+                <screen android:screenDensity="420" android:screenSize="small" />
+                <screen android:screenDensity="ldpi" android:screenSize="normal" />
+                <screen android:screenDensity="mdpi" android:screenSize="normal" />
+                <screen android:screenDensity="hdpi" android:screenSize="normal" />
+                <screen android:screenDensity="xhdpi" android:screenSize="normal" />
+                <screen android:screenDensity="xxhdpi" android:screenSize="normal" />
+                <screen android:screenDensity="xxxhdpi" android:screenSize="normal" />
+                <screen android:screenDensity="420" android:screenSize="normal" />
+                <screen android:screenDensity="ldpi" android:screenSize="large" />
+                <screen android:screenDensity="mdpi" android:screenSize="large" />
+                <screen android:screenDensity="hdpi" android:screenSize="large" />
+                <screen android:screenDensity="xhdpi" android:screenSize="large" />
+                <screen android:screenDensity="xxhdpi" android:screenSize="large" />
+                <screen android:screenDensity="xxxhdpi" android:screenSize="large" />
+                <screen android:screenDensity="420" android:screenSize="large" />
+            </compatible-screens>
+        </config-file>
+    </platform>
+</plugin>
