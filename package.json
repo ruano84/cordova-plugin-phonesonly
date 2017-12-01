@@ -1,6 +1,6 @@
 {
   "name": "cordova-plugin-phonesonly",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "Cordova plugin to restrict your application installation to phones",
   "main": "index.js",
   "keywords": [
