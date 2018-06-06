@@ -1,6 +1,6 @@
 module.exports = function(context) {
     var fs = require('fs');
-    if (ctx.opts.platforms.indexOf('ios') < 0) {
+    if (context.opts.platforms.indexOf('ios') < 0) {
         return;
     }
     var xcode = context.requireCordovaModule('xcode');
