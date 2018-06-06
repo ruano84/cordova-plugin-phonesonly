@@ -1,5 +1,8 @@
 module.exports = function(context) {
     var fs = require('fs');
+    if (ctx.opts.platforms.indexOf('ios') < 0) {
+        return;
+    }
     var xcode = context.requireCordovaModule('xcode');
     var util = context.requireCordovaModule('cordova-lib/src/cordova/util');
     var ConfigParser = context.requireCordovaModule('cordova-common').ConfigParser;
